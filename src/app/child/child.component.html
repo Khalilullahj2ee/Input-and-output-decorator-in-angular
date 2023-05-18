@@ -1,0 +1,6 @@
+<h1>Child components</h1>
+<h4>My Name is: {{studentName}}</h4>
+
+<label for="item-input">Add New Student:</label>
+<input type="text" id="student-input" #newStudent>
+<button type="button" (click)="addNewStudent(newStudent.value)">Add to parent's list</button>
